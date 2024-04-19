@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Aboreto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="content-container">
+            <div class="adlam-display-regular">What's the Mood</div>
+            <div class="mood-buttons">
+                <button class="mood-button sad" data-mood="sad">Sad</button>
+                <button class="mood-button romantic" data-mood="romantic">Romantic</button>
+                <button class="mood-button latenight" data-mood="lateNight">Late Night</button>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="previousButton" class="control-button">Previous</button>
+        <button id="pauseButton" class="control-button">Pause</button>
+        <div id="timer" class="timer">0:00</div>
+        <button id="nextButton" class="control-button">Next</button>
+    </div>
+    <audio id="audio" preload="auto"></audio>
+    <script src="index.js"></script>
+</body>
+</html>
